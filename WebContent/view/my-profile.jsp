@@ -1,9 +1,9 @@
-
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>新建用户 简洁Bootstrap响应式后台管理系统模板下载</title>	
+    <title>个人资料 简洁Bootstrap响应式后台管理系统模板下载</title>	
 	<meta name="keywords" content="Bootstrap模板,Bootstrap3模版,Bootstrap模板下载,Bootstrap后台模板,Bootstrap教程,Bootstrap中文,后台管理系统模板,后台模板下载,后台管理系统,后台管理模板" />
 	<meta name="description" content="JS代码网提供Bootstrap模板,后台管理系统模板,后台管理界面,Bootstrap后台板版下载" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,14 +65,14 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><i class="icon-wrench"></i> Administration</li>
-              <li class="active"><a href="users.html">Users</a></li>
+              <li><a href="users.html">Users</a></li>
               <li><a href="roles.html">Roles</a></li>
               <li class="nav-header"><i class="icon-signal"></i> Statistics</li>
               <li><a href="stats.html">General</a></li>
               <li><a href="user-stats.html">Users</a></li>
               <li><a href="visitor-stats.html">Visitors</a></li>
               <li class="nav-header"><i class="icon-user"></i> Profile</li>
-              <li><a href="my-profile.html">My profile</a></li>
+              <li class="active"><a href="my-profile.html">My profile</a></li>
               <li><a href="#">Settings</a></li>
 			  <li><a href="#">Logout</a></li> 
             </ul>
@@ -81,52 +81,52 @@
         <div class="span9">
 		  <div class="row-fluid">
 			<div class="page-header">
-				<h1>New User <small>User registration</small></h1>
+				<h1>My profile <small>Update info</small></h1>
 			</div>
 			<form class="form-horizontal">
 				<fieldset>
 					<div class="control-group">
 						<label class="control-label" for="name">Name</label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" id="name" />
+							<input type="text" class="input-xlarge" id="name" value="Admin" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="email">E-mail</label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" id="email" />
+							<input type="text" class="input-xlarge" id="email" value="travis@provider.com" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="pnohe">Phone</label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" id="phone" />
+							<input type="text" class="input-xlarge" id="phone" value="xxx-xxx-xxxx" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="city">City</label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" id="city" />
+							<input type="text" class="input-xlarge" id="city" value="My City" />
 						</div>
 					</div>	
 					<div class="control-group">
 						<label class="control-label" for="role">Role</label>
 						<div class="controls">
 							<select id="role">
-								<option value="admin">Admin</option>
+								<option value="admin" selected>Admin</option>
 								<option value="mod">Moderator</option>
-								<option value="user" selected>User</option>
+								<option value="user">User</option>
 							</select>
 						</div>
 					</div>	
 					<div class="control-group">
 						<label class="control-label" for="active">Active?</label>
 						<div class="controls">
-							<input type="checkbox" id="active" value="1" />
+							<input type="checkbox" id="active" value="1" checked />
 						</div>
 					</div>
 					<div class="form-actions">
-						<input type="submit" class="btn btn-success btn-large" value="Save User" /> <a class="btn" href="users.html">Cancel</a>
+						<input type="submit" class="btn btn-success btn-large" value="Save Changes" /> <a class="btn" href="users.html">Cancel</a>
 					</div>					
 				</fieldset>
 			</form>
